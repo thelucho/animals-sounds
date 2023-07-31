@@ -1,0 +1,18 @@
+.sound-button {
+  width: 205px;
+  height: 184px;
+  background-color: white;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0px 4px 17px 7px rgb(0 0 0 / 24%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.sound-button img {
+  max-width: 100%;
+  max-height: 116px;
+}
