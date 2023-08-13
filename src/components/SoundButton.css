@@ -1,5 +1,6 @@
 .sound-button {
-  width: 205px;
+  position: relative;
+  max-width: 205px;
   height: 184px;
   background-color: white;
   color: #222;
@@ -10,9 +11,36 @@
   align-items: center;
   flex-direction: column;
   row-gap: 10px;
+  outline: none !important;
+  border: 5px solid #ffffff;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.sound-button img {
+.sound-button:hover {
+  border: none;
+}
+
+.sound-button.active {
+  border: 5px solid #ecc22d;
+}
+
+.sound-button_dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+}
+
+.sound-button_picture {
   max-width: 100%;
   max-height: 116px;
+}
+
+.sound-button_icon {
+  position: absolute;
+  bottom: 14px;
+  right: 13px;
+  width: 26px;
 }

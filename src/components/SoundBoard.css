@@ -1,5 +1,12 @@
 .sound-board {
   display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .sound-board {
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
